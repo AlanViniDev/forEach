@@ -1,0 +1,39 @@
+<div id = "array"></div>
+<script>
+
+    var array = ["vetor1","vetor2","vetor3",
+    "vetor4","vetor5","vetor1","vetor2",
+    "vetor3","vetor4","vetor5","vetor1","vetor2","vetor3",
+    "vetor4","vetor5","vetor1","vetor2",
+    "vetor3","vetor4","vetor5","vetor1","vetor2","vetor3",
+    "vetor4","vetor5","vetor1","vetor2",
+    "vetor3","vetor4","vetor5","vetor1","vetor2","vetor3",
+    "vetor4","vetor5","vetor1","vetor2",
+    "vetor3","vetor4","vetor5"];
+
+    array.forEach(function (value,index){
+        document.getElementById("array").innerHTML += "<div id = 'vetorStyle'>" + value + "</div>";
+        if(window.screen.width  <= 400){
+            document.getElementById("array").innerHTML += "</br>";
+        }
+    });
+
+</script>
+<style>
+    #vetorStyle{
+        margin:30px;
+        border-style: solid;
+        border-width: 1px;
+        border-color:blue;
+        width:100px;
+        display: inline-flex;
+    }
+</style>
+
+
+
+
+
+
+
+
